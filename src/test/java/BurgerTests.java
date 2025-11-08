@@ -21,7 +21,7 @@ public class BurgerTests {
     Ingredient ingredient;
 
     @Mock
-    Ingredient ingredient2;
+    Ingredient ingredientTwo;
 
     @Test
     public void setBunsTest() {
@@ -46,9 +46,9 @@ public class BurgerTests {
     @Test
     public void moveIngredientTest() {
         burger.addIngredient(ingredient);
-        burger.addIngredient(ingredient2);
+        burger.addIngredient(ingredientTwo);
         burger.moveIngredient(0, 1);
-        Assert.assertEquals(ingredient2, burger.ingredients.get(0));
+        Assert.assertEquals(ingredientTwo, burger.ingredients.get(0));
     }
 
     @Test
